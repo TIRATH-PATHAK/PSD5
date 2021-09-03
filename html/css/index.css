@@ -91,6 +91,7 @@ button{
 button:hover{
     background: linear-gradient(60deg,rgb(74, 188, 233),#206af5);
     background-position: center;
+  
 
 }
 
@@ -311,6 +312,8 @@ header{
 .start_btn button:hover{
     background: linear-gradient(60deg,rgb(74, 188, 233),#206af5);
     background-position: center;
+    
+   
 }
 
 /* Section2 CSS */
@@ -370,6 +373,7 @@ header{
 
 .movs:hover i, .movs:hover .section2_btm_title, .movs:hover .section2_btm_subTitle p{
     color: #2d71f1;
+    transition: all 0.5s ease-in-out;
 }
 
 

@@ -47,9 +47,13 @@ img{
     height: auto;
 }
 
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6,p,ul{
     margin: 0;
     padding: 0;
+}
+
+h3{
+    font-size: 52px;
 }
 
 li{
@@ -65,6 +69,31 @@ button{
     cursor: pointer;
 }
 
+
+.fa-facebook-f:hover{
+    color: #3B5998;
+    
+}
+
+.fa-twitter:hover{
+    color: #00ACEE;
+   
+}
+
+.fa-instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: white;
+    background-clip: text;
+  
+}
+
+
+button:hover{
+    background: linear-gradient(60deg,rgb(74, 188, 233),#206af5);
+    background-position: center;
+
+}
+
 i:hover{
     color: #2d71f1;
 }
@@ -77,10 +106,14 @@ i:hover{
 
 
 .section_1{
-    background-image:linear-gradient(to right,#585960A6,#454345A6),url('../assests/images/Image.png');
+    background: url('../assests/images/imgs.png');
     background-repeat: no-repeat;
     background-size: cover;
     
+}
+
+.ru{
+    color: #83878d;
 }
 
 header{
@@ -94,7 +127,7 @@ header{
 .head_left{
     padding-top: 1.5%;
     float: left;
-    width: 25%;
+    width: 29%;
     font-size: 11px;
 }
 
@@ -117,7 +150,12 @@ header{
     width: 56%;
     padding-right: 7%;
     font-size: 11px;
+    padding-top: 1.5%;
     
+}
+
+.head_right{
+    padding-top: 1.5%;
 }
 
 
@@ -127,8 +165,14 @@ header{
     padding-right: 3%;
 }
 
+
+
 .head_middle li:hover a{
-    color: #2d71f1;
+    color: rgb(74, 188, 233);
+}
+
+.mobile_bar{
+    display: none;
 }
 
 .logo{
@@ -136,11 +180,10 @@ header{
 }
 
 
-
 .right_arrow{
     position: absolute;
     float: right;
-    right: 0%;
+    right: 6%;
     top: 110px;
 }
 
@@ -152,10 +195,16 @@ header{
 
 .left_arrow i, .right_arrow i{
     color: white;
+    padding: 55% 55%;
+    border: 1px solid white;
+    border-radius: 100%;
+    font-weight: 200;
+    font-size: 30px;
 }
 
-.left_arrow i:hover,.right_arrow i:hover{
-    color: #2d71f1;
+.left_arrow:hover i,.right_arrow:hover i{
+    color: rgb(74, 188, 233);
+    border: 1px solid rgb(74, 188, 233);
 }
 
 .logo{
@@ -169,7 +218,7 @@ header{
     color: #ffffff;
     font-weight: 700;
     font-family: 'Montserrat-Bold',sans-serif;
-    width: 60%;
+    width: 57%;
     display: block;
     margin: 0 auto;
     padding-top: 2%;
@@ -195,25 +244,30 @@ header{
 
 .choose{
     background-color: #3b3d40;
-    padding: 5%;
+    padding:5% 0% 5% 5%;
 }
 
 
 .email_id{
     float: left;
-    width: 23%;
+    padding-right: 4%;
     margin-left: 0%;
     
 }
 
+.invst{
+    position: relative;
+}
+
+
 .investment{
     float: left;
-    width: 60%;
+   padding-right: 41%;
     position: relative;
 }
 
 .investment input{
-    padding: 2% 58% 2% 2%;
+    padding: 7% 213% 7% 10%;
     border-radius: 9px;
     background-color: #585a5c;
     color: white;
@@ -222,7 +276,7 @@ header{
 
 .email_id input{
     
-    padding: 5.5% 8% 5.5% 4%;
+    padding: 7% 8% 7% 4%;
     border-radius: 9px;
     background-color: #585a5c;
     color: white;
@@ -232,8 +286,8 @@ header{
 
 .drop_down_arrow{
   position: absolute;
-  top: 13px;
-  right: 15%;
+  top: 0.2em;
+  right: 4%;
 }
 
 .drop_down_arrow i{
@@ -242,18 +296,38 @@ header{
 }
 
 .start_btn button{
-    padding: 1.2% 2%;
+    padding: 1.4% 4%;
     border-radius: 40px;
     background-color: #2d71f1;
     border: none;
     color: white;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: 'Montserrat-Bold',sans-serif;
+}
+
+.start_btn button:hover{
+    background: linear-gradient(60deg,rgb(74, 188, 233),#206af5);
+    background-position: center;
 }
 
 /* Section2 CSS */
 
 .section_2{
     background-color: #f9f9f9;
-    padding-bottom: 6.875em;
+    padding-bottom: 19em;
+}
+
+
+.heart_img:hover{
+    transform: rotateY(180deg);
+    transition: all 1.5s ease-in-out;
+}
+
+.heart_img{
+    transition: all 1.5s ease-in-out;
 }
 
 .section2_logo{
@@ -263,7 +337,7 @@ header{
 
 .section2_title h3{
     padding-top: 2% ;
-    font-size: 52px;
+   
     letter-spacing: -2px;
     line-height: 55px;
     color: #3b3d40;
@@ -285,13 +359,17 @@ header{
 .movs{
     padding-top: 6%;
     width: 24%;
-    display: inline-block;
+   float: left;
     text-align: center;
 }
 
 .movs i{
     font-size: 20px;
 
+}
+
+.movs:hover i, .movs:hover .section2_btm_title, .movs:hover .section2_btm_subTitle p{
+    color: #2d71f1;
 }
 
 
@@ -329,7 +407,7 @@ header{
 }
 
 .section3_Title h3{
-    font-size: 52px;
+  
     letter-spacing: -2px;
     line-height: 55px;
     color: #3b3d40;
@@ -389,7 +467,7 @@ header{
 
 
 .section4_Title h3{
-    font-size: 52px;
+  
     letter-spacing: -2px;
     line-height: 55px;
     color: #3b3d40;
@@ -403,6 +481,7 @@ header{
     line-height: 27px;
     color: #656b6f;
     font-weight: 400;
+    width: 92%;
 }   
 
 .section4_btn{
@@ -421,6 +500,15 @@ header{
 
 }
 
+
+.section4_btn button:hover{
+    background: linear-gradient(60deg,rgb(74, 188, 233),#206af5);
+    background-position: center;
+
+}
+
+
+
 /* Section 5 CSS */
 
 .section_5{
@@ -434,7 +522,7 @@ header{
 }
 
 .section5_Title h3{
-    font-size: 52px;
+  
     letter-spacing: -2px;
     line-height: 55px;
     color: #3b3d40;
@@ -471,6 +559,8 @@ header{
 
 .section5_right{
     text-align: center;
+    float: right;
+    padding-right: 8%;
 }
 
 
@@ -483,12 +573,14 @@ header{
 }
 
 .section6_Title h3{
-    font-size: 52px;
+   
     letter-spacing: -2px;
     line-height: 55px;
     color: #3b3d40;
     font-weight: 700;
     text-align: center;
+    display: block;
+    margin: 0 auto;
     width: 96%;
     font-family: 'Montserrat-Bold',sans-serif;
 }
@@ -639,6 +731,10 @@ footer{
     width: 60%;
 }
 
+.middle_txt p a{
+    color: #656b6f;
+}
+
 .p{
     padding-top: 2%;
 }
@@ -690,4 +786,684 @@ footer{
     display: block;
     content: '';
     clear: both;
+}
+
+
+/* Media Query for 1024px */
+
+@media only screen and (max-width:1024px){
+
+    h3{
+        font-size: 49px;
+    }
+
+    .head_left{
+        padding-left: 4%;
+    }
+
+    .head_middle{
+        width: 54%;
+        padding-right: 5%;
+    }
+
+    .left_arrow{
+        left: 6%;
+    }
+
+    .right_arrow{
+        right: 9%;
+    }
+
+    .movs{
+        margin-left: 0.3%;
+    }
+    .section3_left,.section5_left{
+        padding-left: 4%;
+    }
+
+    .section3_right {   
+        padding-right: 3%;
+    }
+
+    .section6_Title h3 {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .section6_bottom_left{
+        padding-left: 4%;
+    }
+
+    .section6_bottom_right{
+        padding-right: 4%;
+    }
+
+    .footer_left,.footer_middle{
+        padding-left: 4%;
+    }
+
+    .footer_right{
+        padding-right: 4%;
+    }
+
+    
+}
+
+@media screen and (max-width:965px) {      
+
+    
+    .email_id input {
+        padding: 7% 5% 7% 7%;
+    }
+
+    .investment{
+        padding-right: 37%;
+    }
+
+    .investment input {
+        padding: 7% 165% 7% 10%
+    }
+
+    .email_id_last input {
+        padding: 5.5% 125% 5.5% 7%;
+    }
+}
+
+
+@media screen and (max-width:938px){
+    .investment input {
+        padding: 7% 155% 7% 10%;
+    }
+
+    .investment {
+        padding-right: 36%;
+    }
+
+    .start_btn button {
+        padding: 1.5% 3%;
+    }
+
+    .email_id_last input {
+        padding: 6% 117% 6% 7%;
+    }
+}
+
+@media screen and (max-width:878px){
+
+    h3{
+        font-size: 41px;
+    }
+
+    .investment {
+        padding-right: 35%;
+    }
+
+    .investment input {
+        padding: 7% 140% 7% 10%;
+    }
+
+    .section3_left {
+        width: 44%;
+    }
+
+
+    .section3_subTitle p,.section4_subTitle p,.section5_subTitle p {
+        font-size: 17px;
+    }
+
+    .section6_btn {
+        padding-top: 24%;
+    }
+
+    .email_id_last input {
+        padding: 6% 110% 6% 7%;
+    }
+
+    .section7_btn button {
+        padding: 19% 50%;
+    }
+}
+
+@media screen and (max-width:869px){
+    .investment {
+        padding-right: 32%;
+    } 
+
+    .investment input {
+        padding: 7% 129% 7% 10%;
+    }
+}
+
+@media screen and (max-width:828px){
+    .email_id input {
+        padding: 7% 4% 7% 7%;
+    }
+
+    .investment input {
+        padding: 7% 101% 7% 10%;
+    }
+
+    .investment {
+        padding-right: 28%;
+    }
+
+    .email_id_last input {
+        padding: 6% 102% 6% 7%;
+    }
+
+    .section7_btn button {
+        padding: 18% 43%;
+    }
+}
+
+
+@media only screen and (max-width:807px){
+    .section6_btn {
+        padding-top: 29%;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    h3{
+        font-size: 41px;
+    }
+
+    .head_middle li{
+        padding-right: 5%;
+    }
+
+    .head_left{
+        width: 26%;
+    }
+
+    .head_middle {
+        width: 58%;
+    }
+
+    .email_id input {
+        padding: 7% 0% 7% 7%;
+    }
+
+    .investment input {
+        padding: 7% 80% 7% 10%;
+    }
+
+    .investment {
+        padding-right: 24%;
+    }
+
+    .movs{
+        width: 22%;
+    }
+
+    .mov1{
+        margin-left: 6%;
+    }
+
+    .start_btn button {
+        padding: 1.5% 2%;
+    }
+
+    .section3_left {
+        width: 42%;
+    }
+
+    .section3_subTitle p,.section4_subTitle p,.section5_subTitle p {
+        font-size: 17px;
+    }
+    
+    .section4_image_left{
+        width: 51%;
+    }
+
+    .section6_btn {
+        padding-top: 32%;
+    }
+
+    .email_id_last input {
+        padding: 6% 89% 6% 7%;
+    }
+
+    .section7_btn button {
+        padding: 16% 43%
+    }
+
+    
+}
+
+@media screen and (max-width:738px) {
+
+    .investment input {
+        padding: 7% 82% 7% 10%;
+    }
+
+    .investment {
+        padding-right: 26%;
+    }
+
+    .start_btn button {
+        padding: 1.8% 2%;
+    }
+
+    .section7_btn button {
+        padding: 16% 37%;
+    }
+
+    .section7_btn {
+        
+        padding-right: 25%;
+    }
+    
+}
+
+
+@media only screen and (max-width:730px){
+
+    .section3_right{
+        width: 58%;
+    }
+
+    .investment input {
+        padding: 7% 63% 7% 10%;
+    }
+
+    .investment {
+        padding-right: 21%;
+    }
+
+    .section5_left {
+        width: 40%;
+    }
+}
+
+
+@media only screen and (max-width:715px){
+    .section6_btn {
+        padding-top: 40%;
+    }
+
+    .section4_image_left {
+        padding-bottom: 20%;
+    }
+}
+
+@media only screen and (max-width:705px){
+
+    .section3_left {
+        width: 40%;
+    }
+
+    .section3_right_image{
+        width: 90%;
+    }
+
+    .section3_subTitle{
+        width: 88%;
+    }
+
+    .email_id_last input {
+        padding: 6% 75% 6% 7%;
+    }
+
+    .section7_btn button {
+        padding: 16% 27%;
+    }
+
+    .section3_right{
+        width: 58%;
+    }
+}
+
+@media only screen and (max-width:679px){
+
+    h3{
+        font-size: 38px;
+    }
+
+    .section4_image_left img{
+        width: 80%;
+    }
+
+    .section5_right_image img{
+        width: 85%;
+    }
+
+    .section3_subTitle p, .section4_subTitle p,.section5_subTitle p {
+        font-size: 15px;
+    }
+}
+    
+@media only screen and (max-width:644px){
+    /* .choose {
+        padding: 5% 0% 5% 11%;
+    } */
+
+    .investment input {
+        padding: 7% 36% 7% 10%;
+    }
+
+    .investment {
+        padding-right: 15%;
+    }
+
+    .section3_right{
+        width: 58%;
+    }
+}
+
+@media only screen and (max-width:628px){
+    .head_middle li {
+        padding-right: 4%;
+    }
+    .head_middle {
+        width: 57%;
+    }
+
+    .head_left {
+        width: 24%;
+    }
+}
+
+
+
+@media only screen and (max-width:594px){
+    .choose {
+        padding: 5% 0% 5% 15%;
+    }
+
+    .head_middle li {
+        padding-right: 3%;
+    }
+
+    .head_middle {
+        width: 57%;
+    }
+
+    .head_left{
+        width: 24%;
+    }
+
+    .start_btn{
+        text-align: center;
+        padding-right: 27%;
+        padding-top: 14%;
+    }
+
+    .section3_left{
+        padding-top: 4%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .start_btn button {
+        padding: 2.8% 4%;
+    }
+
+    .section3_right{
+        width: 100%;
+        padding-right: 0%;
+    }
+
+    .section3_right_image {
+        width: 100%;
+    }
+
+    .section3_right_image img{
+        width: 100%;
+        
+    }
+
+    .section3_left {
+        padding-left: 8%;
+    }
+
+    .section4_image_left img {
+        width: 70%;
+    }
+
+    .section4_image_left {
+        width: 100%;
+        padding-bottom: 11%;
+    }
+
+    .section4_subTitle p {
+        width: 88%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .section5_subTitle p{
+        width: 90%;
+        padding-right: 5%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .section3_subTitle p, .section4_subTitle p, .section5_subTitle p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .section4_right,.section5_right{
+        text-align: center;
+    }
+
+    .section5_right {
+        width: 100%;
+        padding-right: 0%;
+    }
+
+    .section5_Title h3{
+        padding-top: 11%;
+        text-align: center;
+    }
+
+    .section5_right_image{
+        width: 100%;
+    }
+
+    .section5_right_image img{
+        width: 70%;
+    }
+
+    .section5_left {
+        width: 100%;
+    }
+
+    .section5_btn{
+        text-align: center;
+    }
+
+    .section5_btn button{
+        padding: 2% 6.5%;
+    }
+
+    .section6_bottom_left, .section6_bottom_right{
+        width: 80%;
+        padding: 0;
+        float: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .section6_bottom_right{
+        padding-top: 7%;
+    }
+
+    .section6_btn {
+        padding-top: 11%;
+    }
+
+    .section6_btn button{
+        padding: 2% 4%;
+    }
+
+    .section_4 {
+        padding-bottom: 10%;
+    }
+
+    .email_id_last {
+        float: none;
+        width: 39%;
+        margin-left: 20%;
+    }
+
+    .section7_btn {
+        float: none;
+        text-align: center;
+        padding-left: 21%;
+        padding-top: 5%;
+    }
+
+
+    .section7_btn button {
+        padding: 4% 13%;
+    }
+
+    .footer_middle {
+        padding-left: 8%;
+    }
+
+    .copyright{
+        padding-top: 4.8%;
+    }
+
+}
+
+@media only screen and (max-width:568px){
+    .mobile_bar{
+        display: block;
+        text-align: right;
+        padding-right: 7%;
+    }
+
+    .mobile_bar i{
+        font-size: 18px;
+        color: white;
+    }
+
+    .section_2{
+        padding-bottom: 25em;
+    }
+
+    .movs {
+        width: 44%;
+        padding-top: 9%;
+    }   
+    
+    .mov3 {
+        margin-left: 5%;
+    }
+
+    .head_middle,.head_right{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:524px){
+
+    h3{
+        font-size: 34px;
+    }
+
+    .left_arrow i, .right_arrow i {
+        color: white;
+        padding: 35% 35%
+    }
+
+    .email_id,.investment{
+        float: none;
+        width: 100%;
+        padding-top: 4%;
+    }
+
+    .email_id input {
+        padding: 3.5% 33% 3.5% 7%;
+
+    }
+
+    .investment {
+        padding-right: 12%;
+    }
+
+    .invst{
+        position: relative;
+    }
+
+    
+
+    .investment input {
+        padding: 4% 36% 4% 8%;
+    }
+
+    .drop_down_arrow {
+        position: absolute;
+        top: 0.2em;
+        right: 6%;
+    }
+
+    .start_btn{
+        padding-top: 11%;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .section1_subTitle{
+        width: 39%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .email_id_last input {
+        padding: 6% 45% 6% 7%;
+    }
+}
+
+@media only screen and (max-width:370px){
+    .email_id input {
+        padding: 3.5% 17% 3.5% 7%;
+    }
+
+    .investment input {
+        padding: 4% 19% 4% 8%;
+    }
+}
+
+
+@media only screen and (max-width:348px){
+    .email_id_last{
+        margin-left: 17%;
+    }
+
+    .email_id_last input {
+        padding: 6% 26% 6% 7%;
+    }
+
+}
+
+@media only screen and (max-width:290px){
+    .left_arrow i, .right_arrow i {
+        color: white;
+        padding: 19% 19%;
+        font-size: 24px;
+    }
+
+    .email_id input {
+        padding: 3.5% 8% 3.5% 7%;
+    }
+
+    .investment input {
+        padding: 4% 9% 4% 8%;
+    }
+
+    .start_btn{
+        padding-right: 15%;
+    }
+
+    .email_id_last input {
+        padding: 6% 13% 6% 7%;
+    }
 }

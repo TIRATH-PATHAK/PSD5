@@ -304,7 +304,6 @@ header{
     color: white;
     font-size: 10px;
     letter-spacing: 2px;
-    color: #ffffff;
     font-weight: 700;
     font-family: 'Montserrat-Bold',sans-serif;
 }
@@ -759,6 +758,9 @@ footer{
     padding-right: 3%;
 }
 
+.footer_icons li a i{
+    color: white;
+}
 
 .footer_icons{
     text-align: right;
@@ -854,6 +856,8 @@ footer{
     
 }
 
+/* Media query for 965px */
+
 @media screen and (max-width:965px) {      
 
     
@@ -874,6 +878,7 @@ footer{
     }
 }
 
+/* Media query for 938px */
 
 @media screen and (max-width:938px){
     .investment input {
@@ -892,6 +897,8 @@ footer{
         padding: 6% 117% 6% 7%;
     }
 }
+
+/* Media query for 878px */
 
 @media screen and (max-width:878px){
 
@@ -929,6 +936,8 @@ footer{
     }
 }
 
+/* Media query for 869px */
+
 @media screen and (max-width:869px){
     .investment {
         padding-right: 32%;
@@ -938,6 +947,8 @@ footer{
         padding: 7% 129% 7% 10%;
     }
 }
+
+/* Media query for 828px */
 
 @media screen and (max-width:828px){
     .email_id input {
@@ -961,12 +972,15 @@ footer{
     }
 }
 
+/* Media query for 807px */
 
 @media only screen and (max-width:807px){
     .section6_btn {
         padding-top: 29%;
     }
 }
+
+/* Media query for 768px */
 
 @media screen and (max-width:768px){
 
@@ -1036,6 +1050,7 @@ footer{
 
     
 }
+/* Media query for 738px */
 
 @media screen and (max-width:738px) {
 
@@ -1062,7 +1077,7 @@ footer{
     
 }
 
-
+/* Media query for 730px */
 @media only screen and (max-width:730px){
 
     .section3_right{
@@ -1082,6 +1097,7 @@ footer{
     }
 }
 
+/* Media query for 715px */
 
 @media only screen and (max-width:715px){
     .section6_btn {
@@ -1092,6 +1108,8 @@ footer{
         padding-bottom: 20%;
     }
 }
+
+/* Media query for 705px */
 
 @media only screen and (max-width:705px){
 
@@ -1120,6 +1138,8 @@ footer{
     }
 }
 
+/* Media query for 679px */
+
 @media only screen and (max-width:679px){
 
     h3{
@@ -1139,6 +1159,9 @@ footer{
     }
 }
     
+
+/* Media query for 644px */
+
 @media only screen and (max-width:644px){
     /* .choose {
         padding: 5% 0% 5% 11%;
@@ -1157,6 +1180,7 @@ footer{
     }
 }
 
+/* Media query for 628px */
 @media only screen and (max-width:628px){
     .head_middle li {
         padding-right: 4%;
@@ -1171,7 +1195,7 @@ footer{
 }
 
 
-
+/* Media query for 594px */
 @media only screen and (max-width:594px){
     .choose {
         padding: 5% 0% 5% 15%;
@@ -1337,6 +1361,7 @@ footer{
 
 }
 
+/* Media query for 568px */
 @media only screen and (max-width:568px){
     .mobile_bar{
         display: block;
@@ -1365,7 +1390,31 @@ footer{
     .head_middle,.head_right{
         display: none;
     }
-}
+
+    .footer_left,.footer_middle,.footer_right{
+        width: 100%;
+        text-align: center;
+        padding-top: 3%;
+        padding-left: 0%;
+    }
+
+    .middle_txt p{
+        width: 100%;
+    }
+
+    .footer_middle{
+        padding-bottom: 5%;
+        padding-left: 0%;
+    }
+
+    .footer_icons,.copyright{
+        text-align: center;
+        padding-left: 7%;
+     
+        
+    }
+    
+    /* Media query for 524px */
 
 @media only screen and (max-width:524px){
 
@@ -1412,20 +1461,24 @@ footer{
     .start_btn{
         padding-top: 11%;
     }
-}
 
+   
+}
+/* Media query for 480px */
 @media only screen and (max-width:480px){
     .section1_subTitle{
         width: 39%;
     }
 }
 
+/* Media query for 400px */
 @media only screen and (max-width:400px){
     .email_id_last input {
         padding: 6% 45% 6% 7%;
     }
 }
 
+/* Media query for 370px */
 @media only screen and (max-width:370px){
     .email_id input {
         padding: 3.5% 17% 3.5% 7%;
@@ -1436,6 +1489,7 @@ footer{
     }
 }
 
+/* Media query for 348px */
 
 @media only screen and (max-width:348px){
     .email_id_last{
@@ -1447,6 +1501,8 @@ footer{
     }
 
 }
+
+/* Media query for 290px */
 
 @media only screen and (max-width:290px){
     .left_arrow i, .right_arrow i {
